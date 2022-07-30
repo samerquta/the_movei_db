@@ -1,7 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../moduels/popular_people_main/models/popular_people_model.dart';
+import 'package:get/get.dart';
+import 'package:the_movie_db_task/app_routes.dart';
+import '../models/popular_people_model.dart';
 
 class PopularPeopleCard extends StatelessWidget {
   final PopularPeopleModel popularPeopleItem;
@@ -16,7 +18,7 @@ class PopularPeopleCard extends StatelessWidget {
         children: [
           GestureDetector(
             onTap: () {
-          //TODO: go to details
+              Get.toNamed(AppLinks.popularPeopleDetailsScreen, arguments: popularPeopleItem);
             },
             child: Container(
               decoration: BoxDecoration(

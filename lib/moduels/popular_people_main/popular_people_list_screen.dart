@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../custom_widgets/internet_connection_failed.dart';
-import '../../custom_widgets/loading_card.dart';
-import '../../custom_widgets/popular_people_card.dart';
+import '../../custom_public_widgets/internet_connection_failed.dart';
+import '../../custom_public_widgets/loading_card.dart';
+import 'widgets/popular_people_card.dart';
 import 'popular_people_list_controller.dart';
 
 

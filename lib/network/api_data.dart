@@ -7,8 +7,6 @@ class ApiData {
   static String baseUrl="https://api.themoviedb.org/3/";
   static String popularPath="popular";
 
-
-
-
-
+  // Popular People Images
+  static String imagesPath="/images";
 }
