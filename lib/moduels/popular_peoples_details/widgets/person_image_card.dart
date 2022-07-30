@@ -1,6 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:the_movie_db_task/app_routes.dart';
 import '../model/person_images_model.dart';
 
 
@@ -20,6 +22,7 @@ class PersonImageCard extends StatelessWidget {
         ),
         child: InkWell(
           onTap: (){
+            Get.toNamed(AppLinks.imageScreen, arguments: profile);
 
           },
           child: Padding(
